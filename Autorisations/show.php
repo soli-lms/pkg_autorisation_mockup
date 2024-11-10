@@ -1,8 +1,9 @@
+<?php include_once $_SERVER['DOCUMENT_ROOT'].'/config.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
-    <?php include_once  $config['views_path'] . '/header.php'; ?>
+    <?php include_once  $config['views_path'] . 'head.php'; ?>
 
     <!-- AdminLTE CSS -->
     <link rel="stylesheet" href="path/to/adminlte/css/adminlte.min.css">
@@ -10,9 +11,9 @@
 
 <body class="sidebar-mini" style="height: auto;">
     <div class="wrapper">
-        <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/nav.php' ?>
+        <?php include_once  $config['views_path'] . 'nav.php'; ?>
 
-        <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/aside.php' ?>
+        <?php include_once  $config['views_path'] . 'aside.php'; ?>
 
 
         <div class="content-wrapper">
